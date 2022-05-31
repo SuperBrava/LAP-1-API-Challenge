@@ -1,8 +1,8 @@
 const axios = require("axios");
 
 const options = axios.create({
-  baseURL: 'https://api.dictionaryapi.dev/api/v2/entries/en/',
-})
+  baseURL: "https://api.dictionaryapi.dev/api/v2/entries/en/",
+});
 
 // axios.request(options).then(function (response) {
 // 	console.log(response.data);
@@ -11,8 +11,7 @@ const options = axios.create({
 // });
 
 exports.allgames = (word) => {
-    return options.get(`/${word}`).then(({data}) => {
-        console.log(data);
-     });
-}
-
+  return options.get(`/${word}`).then(({ data }) => {
+    return data;
+  });
+};
