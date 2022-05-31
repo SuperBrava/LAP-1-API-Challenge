@@ -1,0 +1,27 @@
+{
+  "name": "lap-1-api-challenge",
+  "version": "1.0.0",
+  "description": "Lap 1 code challenge, google search engine style to connect to an API",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SuperBrava/LAP-1-API-Challenge.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SuperBrava/LAP-1-API-Challenge/issues"
+  },
+  "homepage": "https://github.com/SuperBrava/LAP-1-API-Challenge#readme",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "express": "^4.18.1",
+    "nodemon": "^2.0.16"
+  }
+}
