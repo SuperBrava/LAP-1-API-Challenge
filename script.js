@@ -9,8 +9,8 @@ form.addEventListener("submit", getDefinition);
 
 function getDefinition(e) {
   e.preventDefault();
-
-  fetch("http://localhost:3000/exhaustion")
+  const word = document.getElementById("textbox_id").value;
+  fetch(`http://localhost:3000/${word}`)
     .then((res) => {
       return res.json();
     })
