@@ -16,12 +16,15 @@ function getDefinition(e) {
       return res.json();
     })
     .then((data) => {
-      const wordDef = data[0].meanings[0].definitions[0].definition;
-      return wordDef;
+      return data;
     })
-    .then((wordDef) => {
+    .then((data) => {
+      const wordDef = data[0].meanings[0].definitions[0].definition;
       console.log(wordDef);
+      const wordphoentics = data[0].phonetics[1].text;
+      document.getElementById("wordname").innerHTML = word;
       document.getElementById("worddescription").innerHTML = wordDef;
+      document.getElementById("wordphonetics").innerHTML = wordphoentics;
     })
     .catch((error) => console.error("FETCH ERROR:", error));
 }
