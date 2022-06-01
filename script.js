@@ -9,7 +9,8 @@ form.addEventListener("submit", getDefinition);
 
 function getDefinition(e) {
   e.preventDefault();
-  const word = document.getElementById("textbox_id").value;
+  const word = document.getElementById("searchbox").value;
+  console.log(word);
   fetch(`http://localhost:3000/${word}`)
     .then((res) => {
       return res.json();
@@ -19,7 +20,8 @@ function getDefinition(e) {
       return wordDef;
     })
     .then((wordDef) => {
-      document.getElementById("word-def").innerHTML = wordDef;
+      console.log(wordDef);
+      document.getElementById("worddescription").innerHTML = wordDef;
     })
     .catch((error) => console.error("FETCH ERROR:", error));
 }
