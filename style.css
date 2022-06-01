@@ -1,0 +1,37 @@
+body{
+    height: 25%;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin: auto;
+    font-family: 'DM Sans', sans-serif;
+    color: #04b0ee;
+}
+
+.maincontent{
+    margin: auto;
+}
+
+#logo{
+    height: 200px;
+    width: 200px;
+    margin-top: 80px;
+}
+
+form button{
+    font-family: 'DM Sans', sans-serif;
+    height: 30px;
+}
+
+form input {
+    height: 25px;
+    width: 250px;
+    text-align: center;
+}
+
+#output{
+    color: #455a6e;
+}
